@@ -1,7 +1,7 @@
-# 🚀 Quote API — DevOps Assignment (Java + Docker + CI/CD + Terraform)
+# 🚀 Quote API - DevOps Assignment (Java + Docker + CI/CD + Terraform)
 
 This repository contains a small Java Spring Boot application that exposes a simple "Quote of the Day" API, wrapped with a complete DevOps pipeline including Docker, GitHub Actions CI/CD, and AWS deployment using Terraform.  
-The project was built step-by-step as part of a home assignment, with each part implemented gradually and intentionally—not auto-generated—to simulate real-world workflow and commit history.
+The project was built step-by-step as part of a home assignment, with each part implemented gradually and intentionally-not auto-generated-to simulate real-world workflow and commit history.
 
 ---
 
@@ -12,7 +12,7 @@ The application is a minimal **Spring Boot** REST API:
 - `GET /health` → returns service status  
 - `GET /api/quote` → returns a random quote from a predefined list  
 
-It is intentionally lightweight to keep the focus on DevOps, CI/CD and infrastructure—not the business logic.
+It is intentionally lightweight to keep the focus on DevOps, CI/CD and infrastructure-not the business logic.
 
 ---
 
@@ -103,7 +103,7 @@ docker run -p 8080:8080 quote-api:local
 
 ---
 
-## 🔄 CI — Continuous Integration (GitHub Actions)
+## 🔄 CI - Continuous Integration (GitHub Actions)
 
 Every push to `main` triggers CI:
 
@@ -121,7 +121,7 @@ Secrets required:
 
 ---
 
-## 🚀 CD — Continuous Deployment (Terraform on AWS)
+## 🚀 CD - Continuous Deployment (Terraform on AWS)
 
 When CI completes successfully, the **CD workflow** runs:
 
@@ -141,7 +141,7 @@ Secrets required:
 
 ---
 
-## 🌩️ Terraform — Infrastructure Breakdown
+## 🌩️ Terraform - Infrastructure Breakdown
 
 ### Terraform provisions:
 - EC2 instance (Ubuntu 22.04)
@@ -166,21 +166,7 @@ public_ip = "<public-ip>"
 
 ---
 
-## ❗Note About Terraform State (Real-World Detail)
 
-This project **does not use a remote backend** (S3 + DynamoDB).  
-As a result:
-
-- Running `terraform apply` locally creates **local state**  
-- Running Terraform inside GitHub Actions uses a **separate ephemeral state**  
-- After running `tf destroy` locally, AWS resources created by the CI/CD pipeline **are not tracked** locally  
-  (because the GitHub Actions runner had its own temporary state)
-
-Therefore, after completing the assignment, the EC2 instance was removed **manually** through the AWS Console to avoid unnecessary costs.
-
-This behavior is completely normal when not using `backend "s3"`.
-
----
 
 ## 🧹 Cleaning Up (Avoiding AWS Costs)
 
@@ -207,6 +193,6 @@ This project demonstrates a full DevOps workflow:
 - Real-world behavior around Terraform state  
 - Clean and incremental commits, mirroring how real engineers work  
 
-Feel free to clone, test, or extend this project.
+
 
 
