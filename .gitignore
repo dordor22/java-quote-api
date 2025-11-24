@@ -1,5 +1,20 @@
+# Maven build directory
+target/
+
+# Terraform state & local files
 terraform/.terraform/
 terraform/.terraform.lock.hcl
 terraform/terraform.tfstate
 terraform/terraform.tfstate.backup
 terraform/terraform.tfvars
+
+# Allow example tfvars file
+!terraform/terraform.tfvars.example
+
+# IDE folders (optional but common)
+.idea/
+.vscode/
+
+# OS junk
+.DS_Store
+Thumbs.db
