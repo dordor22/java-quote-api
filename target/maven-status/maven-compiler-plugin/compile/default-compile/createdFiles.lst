@@ -1,2 +1,4 @@
+com/dor/quoteapi/service/QuoteService.class
 com/dor/quoteapi/QuoteApiApplication.class
 com/dor/quoteapi/controller/HealthController.class
+com/dor/quoteapi/controller/QuoteController.class

@@ -1,2 +1,4 @@
 /mnt/c/Users/dorma/OneDrive/שולחן העבודה/java-quote-api/src/main/java/com/dor/quoteapi/QuoteApiApplication.java
 /mnt/c/Users/dorma/OneDrive/שולחן העבודה/java-quote-api/src/main/java/com/dor/quoteapi/controller/HealthController.java
+/mnt/c/Users/dorma/OneDrive/שולחן העבודה/java-quote-api/src/main/java/com/dor/quoteapi/controller/QuoteController.java
+/mnt/c/Users/dorma/OneDrive/שולחן העבודה/java-quote-api/src/main/java/com/dor/quoteapi/service/QuoteService.java
