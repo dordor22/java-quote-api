@@ -1,0 +1,8 @@
+aws_region    = "us-east-1"
+instance_type = "t3.micro"
+
+docker_image  = "dormanshi22/quote-api:latest"
+keypair_name  = "YOUR_KEYPAIR_NAME"
+ssh_cidr      = "X.X.X.X/32"
+
+#im using original in my own computer by local so i wouldnt have to upload secrets into github
